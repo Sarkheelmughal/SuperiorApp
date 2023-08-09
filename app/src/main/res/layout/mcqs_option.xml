@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F7F9FB"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container"
+        >
+        <LinearLayout
+            android:id="@+id/layout_mcq"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            >
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/frag_img"
+                />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="#25375F"
+                android:text="Answer some questions to master\nthe concepts."/>
+            <Button
+                android:id="@+id/quiz_star"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/starting_button"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="3dp"
+                android:text="Start Quiz"
+                android:textSize="14sp"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cover_views"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:paddingLeft="10dp"
+                android:weightSum="2.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/ScreenNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.5"
+                    android:text="Question 1"
+                    android:textColor="#25375F"
+                    android:textSize="19sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="100dp"
+                    android:layout_weight="1"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/set_timer"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="5dp"
+                        android:alpha="0.56"
+                        android:background="@drawable/timer_round"
+                        android:backgroundTint="#ffffff"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="#25375F"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/questionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="10dp"
+                        android:text=""
+                        android:textColor="#25375F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+<!--                    <ru.noties.jlatexmath.JLatexMathView-->
+<!--                        android:id="@+id/questionText"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:padding="16dip"-->
+
+<!--                        android:layout_alignParentStart="true"-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        />-->
+                    <View
+                        android:id="@+id/viewOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/questionText"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/darker_gray" />
+
+
+                    <LinearLayout
+                        android:id="@+id/linearOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/questionText"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/btnA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:buttonTint="#FFBA5F"
+                            android:checked="false"
+                            android:text=""
+                            android:textColor="#25375F"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/linearOne"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/linearTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/viewTwo"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+
+                        android:layout_marginEnd="20dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/btnB"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:buttonTint="#FFBA5F"
+                            android:checked="false"
+                            android:text=""
+                            android:textColor="#25375F"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/linearTwo"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/linearThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/viewThree"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+
+                        android:layout_marginEnd="20dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/btnC"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:buttonTint="#FFBA5F"
+                            android:checked="false"
+                            android:text=""
+                            android:textColor="#25375F"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/linearThree"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/linearFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_below="@+id/viewFour"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/btnD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:buttonTint="#FFBA5F"
+                            android:checked="false"
+                            android:text=""
+                            android:textColor="#25375F"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/viewFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/linearFour"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:color/darker_gray" />
+
+                    <Button
+                        android:id="@+id/optbtn"
+                        android:layout_width="351dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/viewFive"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/mcqs_next_button_style"
+
+                        android:elevation="2dp"
+                        android:text="Next Question"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

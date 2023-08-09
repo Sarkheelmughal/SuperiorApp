@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expired"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/skyBlue"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Code has expired.\nPlease contact the administrator."
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/textBlue"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:lottie_autoPlay="true"
+        android:layout_marginBottom="40dp"
+        app:lottie_loop="true"
+        app:lottie_url="https://assets9.lottiefiles.com/packages/lf20_dMUN3n.json" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Back"
+       android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        android:textColor="@color/white"
+ android:background="@drawable/code_btn_bg"
+        android:id="@+id/closeBtn"
+        android:layout_marginBottom="40dp"
+        />
+
+</LinearLayout>

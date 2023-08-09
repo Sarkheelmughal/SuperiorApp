@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Sliders.SliderSecondFrag">
+
+
+    <TextView
+        android:id="@+id/frag1TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practice"
+        android:textColor="@color/textBlue"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.45"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Frag2TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chemistry Test"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/textBlue"
+        app:layout_constraintEnd_toEndOf="@+id/frag1TV"
+        app:layout_constraintStart_toStartOf="@+id/frag1TV"
+        app:layout_constraintTop_toBottomOf="@id/frag1TV" />
+
+    <TextView
+        android:id="@+id/Frag3TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="Your first workout will take 5-10 minutes to complete."
+        android:textColor="@color/textBlue"
+        android:textSize="16dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Frag2TV" />
+
+    <Button
+        android:id="@+id/chemFragBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Start Practice Workout"
+        android:textAllCaps="false"
+        android:textColor="@color/textBlue"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

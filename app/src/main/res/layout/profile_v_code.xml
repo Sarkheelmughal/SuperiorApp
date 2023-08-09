@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:text="Enter your code below"
+        app:layout_constraintEnd_toEndOf="@+id/pinET"
+        app:layout_constraintStart_toStartOf="@+id/pinET"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.alimuzaffar.lib.pin.PinEntryEditText
+        android:id="@+id/pinET"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+
+        android:background="@null"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textIsSelectable="false"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView39"
+        app:pinAnimationType="fromBottom"
+        app:pinBackgroundDrawable="@drawable/bg_pin"
+        app:pinBackgroundIsSquare="true"
+        app:pinCharacterSpacing="4dp"
+        app:pinTextBottomPadding="16dp"
+        tools:ignore="SpUsage" />
+
+    <Button
+        android:id="@+id/sentProfile"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/orange_grad_ten_radius"
+        android:gravity="center"
+        android:text="Verify"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.083"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinET" />
+</androidx.constraintlayout.widget.ConstraintLayout>

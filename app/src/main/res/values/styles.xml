@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+   <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="CustomTheme" parent="android:Theme.Light">
+<!--        <item name="android:windowBackground">@drawable/homebg</item>-->
+    </style>
+    <style name="AppTheme.SplashFullScreen">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="SplashTheme" parent ="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="OrangeTextInputLayout" parent="@android:style/TextAppearance">
+
+    </style>
+
+
+    <style name="BottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyleWrapper</item>
+    </style>
+
+    <style name="bottomSheetStyleWrapper" parent="Widget.Design.BottomSheet.Modal">
+        <item name="behavior_peekHeight">1000dp</item>
+    </style>
+
+    <style name="AppTheme.FullScreen">
+
+        <item name="windowActionBar">false</item>
+
+    </style>
+
+
+    <style name="my_dialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="windowMinWidthMajor">70%</item>
+        <item name="windowMinWidthMinor">70%</item>
+    </style>
+
+
+
+</resources>

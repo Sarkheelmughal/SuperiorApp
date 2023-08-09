@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reivision.FragOneNew"
+    android:id="@+id/fragNew1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/text1"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's revisit some concepts"
+            android:textColor="#25375F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This will help you in understanding\nupcoming topics easily"
+            android:textColor="#25375F"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOPIC NAME"
+            android:textColor="#25375F"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finding out the weak topics..."
+            android:textColor="#25375F"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/chapName"
+            />
+
+
+    </LinearLayout>
+
+
+    <!--    <androidx.appcompat.widget.LinearLayoutCompat-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="bottom"-->
+    <!--        android:layout_marginBottom="50dp"-->
+    <!--        android:layout_marginLeft="20dp"-->
+
+    <!--        >-->
+    <!--        <ImageView-->
+    <!--            android:layout_width="150dp"-->
+    <!--            android:layout_height="50dp"-->
+    <!--            android:id="@+id/swipeto"-->
+
+    <!--            android:src="@drawable/swipetostart" />-->
+    <!--    </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+</FrameLayout>

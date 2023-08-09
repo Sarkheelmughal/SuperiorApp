@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:weightSum="2"
+            android:background="@drawable/result_top_gradient"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/backbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:padding="3dp"
+                android:layout_marginBottom="3dp"
+                android:contentDescription="@string/back"
+                android:src="@drawable/orange_back_ic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Progress Report"
+                android:textColor="#ffffff"
+                android:layout_weight="1"
+android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/round_inner_linear"
+            android:orientation="vertical"
+            android:paddingBottom="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+          <HorizontalScrollView
+              android:layout_width="match_parent"
+              android:layout_height="55dp"
+              android:scrollbars="none"
+              android:layout_marginTop="10dp"
+              android:layout_marginHorizontal="10dp"
+              >
+              <LinearLayout
+                  android:id="@+id/boards"
+                  android:gravity="center"
+                  android:layout_gravity="center"
+                  android:paddingHorizontal="10dp"
+                  app:layout_constraintTop_toBottomOf="@+id/selectTV"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  >
+
+                  <Button
+                      android:id="@+id/AllBtn"
+                      android:layout_width="60dp"
+                      android:layout_height="27dp"
+                      android:text="All"
+                      android:layout_marginHorizontal="5dp"
+                      android:textSize="11sp"
+                      android:textColor="@color/white"
+                      android:background="@drawable/select_board_orange"
+
+                      />
+                  <Button
+                      android:layout_marginVertical="5dp"
+                      android:id="@+id/PhysicsBtn"
+                      android:layout_width="60dp"
+                      android:layout_height="27dp"
+                      android:textSize="11sp"
+                      android:textColor="@color/textBlue"
+                      android:text="Phy"
+
+                      android:layout_marginHorizontal="5dp"
+                      android:background="@drawable/select_board_white"
+
+                      />
+                  <Button
+                      android:id="@+id/ChemistryBtn"
+                      android:layout_width="60dp"
+                      android:layout_height="27dp"
+                      android:layout_marginHorizontal="5dp"
+                      android:text="Chem"
+                      android:textSize="11sp"
+                      android:textColor="@color/textBlue"
+                      android:background="@drawable/select_board_white"
+                      />
+
+                  <Button
+                      android:id="@+id/BioBtn"
+                      android:layout_width="60dp"
+                      android:layout_height="27dp"
+                      android:layout_marginHorizontal="5dp"
+                      android:background="@drawable/select_board_white"
+                      android:text="Bio"
+                      android:textColor="@color/textBlue"
+                      android:textSize="11sp" />
+              </LinearLayout>
+
+          </HorizontalScrollView>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="15dp"-->
+<!--                android:layout_marginTop="25dp"-->
+<!--                android:text="@string/learn"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="17sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="17dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="5dp"-->
+<!--                android:text="@string/learn_description"-->
+<!--                android:textSize="15sp" />-->
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/ScoRE"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechartLearning1"
+                    android:layout_width="125dp"
+                    android:layout_height="120dp"
+                    android:indeterminate="false"
+                    android:progress="50"
+                    android:textAlignment="center" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/green_tick" />
+
+                        <TextView
+                            android:id="@+id/corectLearing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="25dp"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="160dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/cross" />
+
+                        <TextView
+                            android:id="@+id/incorrectLearning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="17dp"
+                            android:layout_marginTop="5dp"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="160dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@android:color/darker_gray" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/double_arrow" />
+
+                        <TextView
+                            android:id="@+id/unansweredLearning"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:text=""
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="160dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/statistics"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechartLearning2"
+                    android:layout_width="125dp"
+                    android:layout_height="120dp"
+                    android:indeterminate="false"
+                    android:progress="50"
+                    android:textAlignment="center" />
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/piechartLearning3"
+                    android:layout_width="125dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="60dp"
+                    android:indeterminate="false"
+                    android:textAlignment="center" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/accuracy"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/Avg"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/SpinKitView.Large.Circle"
+            app:SpinKit_Color="@color/colorPrimaryDark"
+            android:id="@+id/progBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout8"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout8"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout8"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/clearDataCV"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+
+            android:layout_margin="10dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:text="Clear Data"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

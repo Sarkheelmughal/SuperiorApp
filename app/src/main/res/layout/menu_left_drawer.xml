@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/menuLayoutLL"
+    android:orientation="vertical">
+
+<!--    <Space-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="90dp" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/userIconIV"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+
+
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+
+        android:src="@drawable/usericon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/menuNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/userIconIV"
+        app:layout_constraintStart_toEndOf="@+id/userIconIV"
+        app:layout_constraintTop_toTopOf="@+id/userIconIV" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/ic_changeGradeIV"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:src="@drawable/change_grade_ic"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/userIconIV" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/changeGradeTV"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Change Grade"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/ic_changeGradeIV"-->
+<!--       app:layout_constraintStart_toEndOf="@+id/ic_changeGradeIV" />-->
+
+    <ImageView
+        android:id="@+id/ic_learningIV"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/learning_ic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_leaderBoardIV" />
+
+    <TextView
+        android:id="@+id/slideLearningMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Report"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_learningIV"
+        app:layout_constraintStart_toEndOf="@+id/ic_learningIV" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/bookmarkIV"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:alpha="0.7"-->
+<!--        android:src="@drawable/bookmark_ic_fill"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/ic_learningIV" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Bookmark"-->
+<!--        android:textSize="16sp"-->
+<!--        android:id="@+id/bookMarkTV"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/bookmarkIV"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/bookmarkIV" />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:id="@+id/ic_contactUsIV"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:alpha="0.7"-->
+<!--        android:src="@drawable/report_whatsapp_ic"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/bookmarkIV" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Contact Us"-->
+<!--        android:textSize="16sp"-->
+<!--        android:id="@+id/contactUsTv"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/ic_contactUsIV"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/ic_contactUsIV" />-->
+
+
+        <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:alpha="0.7"
+        android:src="@drawable/feedback_ic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ic_learningIV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+       android:id="@+id/reportTV"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintStart_toEndOf="@+id/imageView10" />
+
+    <ImageView
+        android:id="@+id/ic_leaderBoardIV"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/leaderboard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userIconIV" />
+
+    <TextView
+        android:id="@+id/leaderBoardTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leader Board"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ic_leaderBoardIV"
+        app:layout_constraintStart_toEndOf="@+id/ic_leaderBoardIV" />
+<!--    <ImageView-->
+<!--        android:id="@+id/fillIV"-->
+<!--        android:layout_width="20dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:src="@drawable/fill_ic"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/FillInTheBlankTV"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/FillInTheBlankTV"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:text="Fill in the Blank"-->
+<!--        android:textSize="16sp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/ic_contactUsIV"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ic_contactUsIV" />-->
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/logouticon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/menuLogoutTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+<!--    <Space-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="56dp" />-->
+
+
+
+<!--    <Space-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp" />-->
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Powered by Exambites"
+        android:textColor="@color/light_gray"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/menuLogoutTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="V 0.0.1"
+        android:textColor="@color/light_gray"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView41"
+        app:layout_constraintStart_toStartOf="@+id/textView41"
+        app:layout_constraintTop_toBottomOf="@+id/menuLogoutTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

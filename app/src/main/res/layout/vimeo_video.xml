@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <com.ct7ct7ct7.androidvimeoplayer.view.VimeoPlayerView
+            android:id="@+id/vimeoPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:autoPlay="false"
+            app:loop="false"
+            app:muted="false"
+            app:showFullscreenOption="false"
+            app:showMenuOption="false"
+            app:showOriginalControls="false"
+            app:showTitle="true"
+            app:topicColor="#FFFF00"
+
+            app:backgroundColor="#00FFFF"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/playerStateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/player_state"/>
+
+            <TextView
+                android:id="@+id/playerCurrentTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/player_current_time"/>
+
+            <TextView
+                android:id="@+id/playerVolumeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/player_volume"/>
+
+            <SeekBar
+                android:id="@+id/volumeSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/playButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Play"/>
+
+                <Button
+                    android:id="@+id/pauseButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pause"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/getCurrentTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get current time"/>
+
+            <Button
+                android:id="@+id/loadVideoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="load other video"/>
+
+            <Button
+                android:id="@+id/colorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="set topic color"/>
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    <com.ct7ct7ct7.androidvimeoplayer.view.VimeoPlayerView-->
+<!--        android:id="@+id/vimeoPlayer"-->
+<!--        android:layout_width="match_parent"-->
+
+<!--        android:layout_height="300dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressBar"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/vimeoVideo"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/vimeoVideo"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/vimeoVideo" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

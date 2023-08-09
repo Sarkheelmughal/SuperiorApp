@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SideMenu.Report">
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/orange_grad_header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cardview_elevation"
+        app:cardCornerRadius="17dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_reportCV"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:contentDescription="@string/back"
+            android:src="@drawable/back_arrow" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/completeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Feedback"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Want to help us make the app better? Have\na cool idea you think we should hear?"
+        android:layout_marginTop="50dp"
+        android:layout_marginHorizontal="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3"/>
+    <!--    <Spinner-->
+<!--        android:id="@+id/reportSubjectSpinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginHorizontal="20dp"-->
+<!--android:paddingStart="15dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:background="@drawable/boarder"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view3" />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="11dp"-->
+<!--        android:layout_height="10dp"-->
+<!--        android:layout_marginEnd="15dp"-->
+<!--        android:src="@drawable/spinner_arrow"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/reportSubjectSpinner"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/reportSubjectSpinner"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/reportSubjectSpinner" />-->
+
+    <EditText
+        android:id="@+id/reportDetailET"
+        android:layout_width="match_parent"
+
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="30dp"
+
+        android:background="@drawable/boarder"
+        android:hint="Let us know.."
+        android:inputType="text|textMultiLine"
+
+        android:padding="15dp"
+        android:gravity="start"
+        android:textColorHint="@color/light_gray"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/sendReport"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTV" />
+
+    <Button
+        android:id="@+id/sendReport"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/orange_grad_ten_radius"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Send"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

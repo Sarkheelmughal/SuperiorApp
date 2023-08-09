@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "987492696053",
+    "firebase_url": "https://superior-school-4287a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "superior-school-4287a",
+    "storage_bucket": "superior-school-4287a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:987492696053:android:f81a0e97dd8e5202fe6abc",
+        "android_client_info": {
+          "package_name": "learningapp.superior.org"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "987492696053-jc66j02u1v7grs4jfee1972sudb2c5ei.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "learningapp.superior.org",
+            "certificate_hash": "1ad227e3112f40bf62818b71b64e28c093b98c0d"
+          }
+        },
+        {
+          "client_id": "987492696053-jd3drrj8rnkpmvgrlh53aakjj42n1on9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "learningapp.superior.org",
+            "certificate_hash": "e1f143ee83f54151f491949bd899f81dcb079b92"
+          }
+        },
+        {
+          "client_id": "987492696053-m19jvvth662rmrfi7rvv9o7uebnaud7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsKxF84AZq0685xmupmP5-yVgiPIxS5hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "987492696053-m19jvvth662rmrfi7rvv9o7uebnaud7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

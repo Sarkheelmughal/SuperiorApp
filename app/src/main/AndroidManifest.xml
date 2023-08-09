@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="learningapp.superior.org">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name="learningapp.superior.org.Home.GenerateCode"></activity>
+        <activity android:name="learningapp.superior.org.Game.PlayWithCode" />
+        <activity
+            android:name="learningapp.superior.org.Home.TestingYoutubeLink"
+            android:exported="true" />
+        <activity android:name="learningapp.superior.org.Home.PastPaperPDF" />
+        <activity android:name="learningapp.superior.org.Home.PastPaperSubjectSelected" />
+        <activity android:name="learningapp.superior.org.Home.Streak" />
+        <activity android:name="learningapp.superior.org.Home.PastPapers" />
+        <activity android:name="learningapp.superior.org.SideMenu.Report" />
+        <activity android:name="learningapp.superior.org.SideMenu.Profile" />
+        <activity android:name="learningapp.superior.org.Login.MobileNumber" />
+        <activity android:name="learningapp.superior.org.SideMenu.FillInTheBlank" />
+        <activity android:name="learningapp.superior.org.SideMenu.BookMarkScreen" />
+        <activity android:name="learningapp.superior.org.Home.PaymentOption" />
+        <activity android:name="learningapp.superior.org.VimeoWebView" />
+        <activity android:name="learningapp.superior.org.SideMenu.LeaderBoard" />
+        <activity android:name="learningapp.superior.org.Game.GameResult" />
+        <activity android:name="learningapp.superior.org.SideMenu.ChangeGrade" />
+        <activity android:name="learningapp.superior.org.Netscreens.NetMain" />
+        <activity
+            android:name="learningapp.superior.org.Reivision.Revision"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Sliders.SliderContainer"
+            android:screenOrientation="locked" />
+
+        <activity
+            android:name="learningapp.superior.org.Home.Snap"
+            android:screenOrientation="locked" />
+
+        <activity
+            android:name="learningapp.superior.org.Home.SelectPaymentPlan"
+            android:screenOrientation="locked" />
+
+        <activity
+            android:name="learningapp.superior.org.Home.SnapAnswer"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.VideoPlayerFragments.PlayerActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Login.Bottom"
+            android:theme="@style/AppTheme.SplashFullScreen" />
+        <activity
+            android:name="learningapp.superior.org.Login.DialerOtp"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.SideMenu.Settings"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Home.Mocktest"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Home.StreakQuiz"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.EntryTestInter.Mdcat"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.EntryTestInter.McatOptions"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Login.StartScreen"
+            android:theme="@style/AppTheme.SplashFullScreen" />
+        <activity
+            android:name="learningapp.superior.org.forget_pass"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Home.BuyNow"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.VideoPlayerFragments.ViewPdf"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.SideMenu.Learning_analysis"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Home.ResultActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.CustomOptionsForNineth.CustomMcqsNine"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Home.Home"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Home.Empty"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Game.SubjectSelection"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.VideoPlayerFragments.VideoNew"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.SplashScreen"
+            android:theme="@style/AppTheme.SplashFullScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="learningapp.superior.org.VimeoVideoTeting" />
+        <activity
+            android:name="learningapp.superior.org.Home.MainActivity2"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Game.PlayGame"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="learningapp.superior.org.Home.Options"
+            android:screenOrientation="locked" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="learningapp.superior.org.MyMessigingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- Libmedia requirement -->
+        <meta-data
+            android:name="fr.maxcom.libmedia.apiKey"
+            android:value="duc83P4gH/qu0Onq9xwFGGAPqWqw3vA7XwmbullLSoR67T+dourPjRspWFn1G/URFJ3L0l7c7Ashe+JLq8dD218H1kVfL2NFKTpmpCs2abEkL3f4ICdmuyc2c7M2cWikIg==" />
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="${crashlyticsEnabled}" /> <!-- <service android:name=".Download.DownloadService" -->
+        <!-- /> -->
+        <service
+            android:name="learningapp.superior.org.Download.DownloadService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="learningapp.unique.org.Download.DownloadService.class" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

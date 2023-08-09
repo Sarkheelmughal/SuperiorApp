@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootView"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View
+        android:id="@+id/viewBuy"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/backFromPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/cardview_elevation"
+        app:cardCornerRadius="19dp"
+        app:cardElevation="4dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBuy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@null"
+            android:contentDescription="@string/back"
+            android:src="@drawable/back_arrow" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/PaymentMethodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBuy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewBuy" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Select Payment Method"
+        android:textColor="@color/textBlue"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewBuy" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/bank_CV"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="15dp"
+
+
+        app:cardBackgroundColor="@color/blueLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView42">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="50dp"
+
+                android:layout_height="40dp"
+                android:src="@drawable/credit_card"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Bank Transfer"
+                android:textColor="@color/textBlue"
+                android:textSize="22sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/drop_down_info"
+                android:layout_width="50dp"
+
+
+                android:layout_height="40dp"
+                android:src="@drawable/drop_down"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/list_up_info"
+                android:layout_width="50dp"
+
+                android:layout_height="40dp"
+                android:src="@drawable/list_up"
+                android:visibility="gone"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView432"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="1. Transfer Amount to Account"
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginTop="10dp"
+
+                android:background="@drawable/bank_slip_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView432">
+
+                <ImageView
+                    android:layout_width="47dp"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/three_circle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="Meezan Bank"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="Superior App"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toTopOf="@+id/accountNumTV"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/accountNumTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+
+                    android:fontFamily="@font/seguisb"
+                    android:text="0206 - 0103691132"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/seguisb"
+                    android:text="IBAN: PK78MEZN0002060103691132"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/shadowOne"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="45dp"
+                android:alpha="0.35"
+                android:background="@drawable/bank_slip_background_shadow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginHorizontal="55dp"
+                android:alpha="0.1"
+                android:background="@drawable/bank_slip_background_shadow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/shadowOne" />
+
+            <TextView
+                android:id="@+id/stepTwoTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="2. Share the Receipt on Whatsapp "
+
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView432"
+                app:layout_constraintTop_toBottomOf="@+id/shadowOne" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/whatsapp"
+
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/number"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stepTwoTXT" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="+92 336 510 6602"
+
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView13" />
+
+            <TextView
+                android:id="@+id/stepThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:fontFamily="@font/poppins_medium"
+                android:text="3. Receive Unlock Code in 12 Hours. "
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/textView432"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/jazzcash_CV"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="15dp"
+
+        app:cardBackgroundColor="@color/blueLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_CV">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/jazz_IV"
+                android:layout_width="50dp"
+
+                android:layout_height="40dp"
+                android:src="@drawable/jazzcash"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/jazzTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Jazz Cash"
+                android:textColor="@color/textBlue"
+                android:textSize="22sp"
+                app:layout_constraintStart_toEndOf="@+id/jazz_IV"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/drop_down_info_jazz"
+                android:layout_width="50dp"
+
+
+                android:layout_height="40dp"
+                android:src="@drawable/drop_down"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/list_up_info_jazz"
+                android:layout_width="50dp"
+
+                android:layout_height="40dp"
+                android:src="@drawable/list_up"
+                android:visibility="gone"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/stepOneJazz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="1. Transfer Amount to Account"
+                android:textColor="@color/textBlue"
+
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/jazzTXT" />
+
+            <TextView
+                android:id="@+id/jazzCashDetail"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/seguisb"
+                android:text="ACC : 0336 510 6602\nTitle : Mamoon Sharif"
+                android:textColor="@color/textBlue"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="@+id/stepOneJazz"
+                app:layout_constraintStart_toStartOf="@+id/stepOneJazz"
+                app:layout_constraintTop_toBottomOf="@+id/stepOneJazz" />
+
+            <TextView
+                android:id="@+id/stepTwoJazz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="2. Share the Receipt on Whatsapp "
+
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/stepOneJazz"
+                app:layout_constraintTop_toBottomOf="@+id/jazzCashDetail" />
+
+            <ImageView
+                android:id="@+id/whatsappJazz"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="10dp"
+
+                android:src="@drawable/whatsapp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/numberJazz"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stepTwoJazz" />
+
+            <TextView
+                android:id="@+id/numberJazz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="+92 336 510 6602"
+
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/whatsappJazz"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/whatsappJazz"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/whatsappJazz" />
+
+            <TextView
+                android:id="@+id/stepThreeJazz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:fontFamily="@font/poppins_medium"
+                android:text="3. Receive Unlock Code in 12 Hours. "
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/stepTwoJazz"
+                app:layout_constraintTop_toBottomOf="@+id/whatsappJazz" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/easypaisa_CV"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="15dp"
+
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/blueLight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jazzcash_CV">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/ep_IV"
+                android:layout_width="50dp"
+
+                android:layout_height="40dp"
+                android:src="@drawable/easypaisa"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/epTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Easy Paisa"
+                android:textColor="@color/textBlue"
+                android:textSize="22sp"
+                app:layout_constraintStart_toEndOf="@+id/ep_IV"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/drop_down_info_ep"
+                android:layout_width="50dp"
+
+
+                android:layout_height="40dp"
+                android:src="@drawable/drop_down"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/list_up_info_ep"
+                android:layout_width="50dp"
+
+                android:layout_height="40dp"
+                android:src="@drawable/list_up"
+                android:visibility="gone"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/stepOneep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="1. Transfer Amount to Account"
+                android:textColor="@color/textBlue"
+
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/epTXT" />
+
+            <TextView
+                android:id="@+id/epCashDetail"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/seguisb"
+                android:text="ACC : 0336 510 6602\nTitle : Mamoon Sharif"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textBlue"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="@+id/stepOneep"
+                app:layout_constraintStart_toStartOf="@+id/stepOneep"
+                app:layout_constraintTop_toBottomOf="@+id/stepOneep" />
+            <TextView
+                android:id="@+id/stepTwoep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/poppins_medium"
+                android:text="2. Share the Receipt on Whatsapp "
+                android:layout_marginTop="10dp"
+
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/stepOneep"
+                app:layout_constraintTop_toBottomOf="@+id/epCashDetail" />
+
+            <ImageView
+                android:id="@+id/whatsappep"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/whatsapp"
+
+                android:layout_marginTop="10dp"
+
+
+                app:layout_constraintEnd_toStartOf="@+id/numberep"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/stepTwoep" />
+
+            <TextView
+                android:id="@+id/numberep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="+92 336 510 6602"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/whatsappep"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/whatsappep"
+                app:layout_constraintTop_toTopOf="@+id/whatsappep" />
+
+            <TextView
+                android:id="@+id/stepThreeep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:fontFamily="@font/poppins_medium"
+                android:text="3. Receive Unlock Code in 12 Hours. "
+                android:textColor="@color/textBlue"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@+id/stepTwoep"
+                app:layout_constraintTop_toBottomOf="@+id/whatsappep" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

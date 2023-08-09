@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Superior EduTech</string>
+    <string name="facebook_app_id">742235175844078</string>
+    <string name="fb_login_protocol_scheme">fb742235175844078</string>
+    <declare-styleable name="CircleProgressBar">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="progressbarColor" format="color" />
+        <attr name="progressBarThickness" format="dimension" />
+
+    </declare-styleable>
+
+    <string name="splash">To make you</string>
+    <string name="splash2"> superior in exams</string>
+
+    <string name="splash_text">Powered by Exambites Inc. is registered and all the content</string>
+    <string name="splash_text2">a copyright.All Rights Reserved.\n \n \nV2</string>
+    <string name="bg">Background</string>
+    <string name="em">Email</string>
+    <string name="passwrd">Password</string>
+    <string name="forget_pass">Forget password?</string>
+    <string name="or">Or</string>
+    <string name="login">Login</string>
+    <string name="fb_login">Login with Facebook</string>
+    <string name="no_account">Don\'t have an account?</string>
+    <string name="sigup">Sign Up</string>
+    <string name="name">Full Name</string>
+    <string name="phone">Mobile Number</string>
+    <string name="password_t">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="School_name">School Name</string>
+    <string name="email_t">Email Address</string>
+    <string name="register">Register</string>
+    <string name="already_member">Already Member?</string>
+    <string name="login_back">Login</string>
+    <string name="math">Mathematics</string>
+    <string name="physics">Physics</string>
+    <string name="chemistry">Chemistry</string>
+    <string name="Biology">Biology</string>
+    <string name="mocks"><br>Competitive \n</br>
+        <br>Exams - Mocks </br></string>
+    <string name="prev_papers"><br>Previous year \n</br>
+       <br> Papers </br></string>
+    <string name="learning">Progress Report</string>
+    <string name="Hello">Hello</string>
+    <string name="nameof">Amara</string>
+    <string name="back">Back Button</string>
+    <string name="chapter">Chapter 3</string>
+    <string name="performance">Performance : Learn!</string>
+    <string name="per_result">Learn the topics in key focus areas and attempt again.We know you can do much better. </string>
+    <string name="score">Score and Solutions</string>
+    <string name="incorrect">0 Incorrect</string>
+    <string name="unanswered">0 Unanswered</string>
+    <string name="view_solutions">View Solutions</string>
+    <string name="statistics">Statistics</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="Avg">Avg.Time/ques</string>
+    <string name="rec_learned">Recently Learned</string>
+    <string name="rec_learned_topics">Find your recently learned topics</string>
+    <string name="home2">Home</string>
+    <string name="top_Picks">Top picks for Amara</string>
+    <string name="def_integ">Definite Integral: Basics</string>
+    <string name="integ_desc">What other students of your grade are studying</string>
+    <string name="learn">Learn</string>
+    <string name="learn_description"><br>Learn the items in the key focus areas and</br>
+        <br>attempt again. We know you can do much better.</br>
+     </string>
+    <string name="ScoRE">Score</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="share">Share the app</string>
+    <string name="share1">Share With friends</string>
+    <string name="share2">Help your friends fall in love with \nlearning through Superior App.</string>
+    <string name="LoginThroughFB">Logged in through FaceBook</string>
+
+    <string name="selected_item">Selected item:</string>
+
+    <string-array name="Grade">
+        <item>9th</item>
+        <item>10th</item>
+        <item>11th</item>
+        <item>12th</item>
+    </string-array>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Report">
+        <item>Tough to understand videos</item>
+        <item>Mistake in content</item>
+        <item>Bugs in App</item>
+        <item>Other</item>
+    </string-array>
+
+    <!--    <string name="app_name">VimeoPlayer</string>-->
+
+    <string name="player_state">player state: %1$s</string>
+    <string name="player_current_time">current time: %1$ss</string>
+    <string name="player_volume">volume: %1$s</string>
+
+    <string name="example_fullscreen">Fullscreen example</string>
+    <string name="example_menu">Menu example</string>
+    <string name="example_recycler_view">Recycler view example</string>
+    <string name="example_original_controls">Original controls example</string>
+    <string name="_1_select_a_subject">1. Select a subject:</string>
+    <string name="what_your_mom_calls_you">What your mom calls you</string>
+    <string name="term_and_conditions_streak">● Maintain a streak for 30 days. \n● Score average of 80% in all quizzes. \n● Share your scores on any social media. \n● Invite your friends for a challenge. \n● Get A Chance To Win 10,000 Monthly.</string>
+</resources>
